@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		<button id="view" class="name">点击</button>
+	</div>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+	var Controller = {};
+
+	(Controller.users = function($){
+		var nameClick = function(){
+			setTimeout(function(){			
+				var person = new Person;
+			},0);
+		}
+
+		$(function(){
+			$("#view").click(nameClick);
+		});
+	})(jQuery);
+
+	// 匿名函数
+	(function(){
+		var a = 1;
+	})();
+</script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
