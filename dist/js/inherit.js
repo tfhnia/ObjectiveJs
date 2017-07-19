@@ -51,3 +51,9 @@ var Cat = new Class(Animal);
 
 var tommy = new Cat;
 tommy.breath();
+
+var proxy = function(func, thisObject){
+	return (function(){
+		return func.apply(thisObject, arguments);
+	});
+};
