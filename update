@@ -1,5 +1,0 @@
-cd ..
-cd github
-cp -r /e/wamp/www/my_project/Object_oriented_JavaScript/. ./ObjectiveJs
-cd ObjectiveJs
-echo "Done!"
