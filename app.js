@@ -46,3 +46,14 @@ Person.prototype.init = function(){
 
 var person = new Person;
 
+var Button = new Class;
+
+Button.include({
+	init: function(element){
+		this.element = jQuery(element);
+
+		this.element.click(this.proxy(this.click));
+	},
+
+	click: function(){}
+})

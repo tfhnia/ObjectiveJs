@@ -17,6 +17,16 @@ var Class = function(parent){
 	klass.fn.parent = klass;
 	klass.__super = klass.__proto__;
 
+	// 添加一个proxy函数
+	klass.proxy = function(){
+		var self = this;
+		return (funciton(func){
+			return func.apply(self, arguments);
+		})
+	}
+
+	klass.fn.proxy = klass.proxy;
+
 	// 给类添加属性
 	klass.extend = function(obj) {
 		var extended = obj.extended;
